@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<button type="button" id="one" onclick="hideme()">HIDE</button>
+<button type="button" id="one" onclick="showme()">SHOW</button>
+<button type="button" id="one" onclick="bgcolorchange()">BACKGROUND COLOR</button>
+<button type="button" id="one" onclick="changeheight()">CHANGE HEIGHT</button>
+<button type="button" id="one" onclick="changewidth()">CHANGE WIDTH</button>
+<button type="button" id="one" onclick="addBorder()">ADD BORDER</button>
+<button type="button" id="one" onclick="addPicture()">ADD PICTURE</button><br><br>
+<button type="button" id="one" onclick="reload()">RELOAD</button>
+
+<div id="maindiv"></div>
+
+<script>
+
+function hideme() {
+
+document.getElementById("maindiv").style.display ="none";
+
+}
+
+function showme() {
+
+document.getElementById("maindiv").style.display ="block";
+
+}
+
+function changeheight() {
+
+document.getElementById("maindiv").style.height = "250px";
+
+}
+
+function changewidth() {
+
+document.getElementById("maindiv").style.width = "700px";
+
+}
+
+function addBorder() {
+
+document.getElementById("maindiv").style.border = "2px solid red";
+
+}
+
+function addPicture() {
+
+document.getElementById("maindiv").style.backgroundImage = "url(https://jakubpolomski.com/wp-content/gallery/norway/Norway-Landscape-Photo-Lofoten-130700NOR0653f.jpg)"
+document.getElementById("maindiv").style.backgroundSize = "cover";
+document.getElementById("maindiv").style.backgroundRepeat = "norepeat";
+
+
+}
+
+function bgcolorchange() {
+
+document.body.style.backgroundColor = "orange";
+
+}
+
+
+function reload() {
+
+window.location.reload();
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
